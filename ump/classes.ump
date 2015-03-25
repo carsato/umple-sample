@@ -2,7 +2,6 @@ class Person{
 }
 
 class User{
-  isA Person, Emailable, GeoLocatable;
 }
 
 class Product{
@@ -22,4 +21,12 @@ class UserRole{
 }
 
 class SaleType{
+}
+
+class PersonProperties{
+  isA CompoundName, Addressable, Emailable;
+}
+
+class UserProperties{
+  isA GeoLocatable, Addressable, Emailable;
 }

@@ -1,3 +1,7 @@
 class Person{
   1 -- 1 PersonProperties properties;
 }
+
+class User{
+  1 -- 1 UserProperties properties;
+}

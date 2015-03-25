@@ -29,6 +29,4 @@ trait Emailable{
   email;
 }
 
-class PersonProperties{
-  isA CompoundName, Addressable, Emailable;
-}
+

@@ -2,16 +2,9 @@
 
 
 class User{
-  Role role2;
-  Integer number;
-  completa ;
-  via = null;
-  tipoDeVia = null;
-  numero = null;
 }
 
 class Role{
-  role1;
 }
 
 
