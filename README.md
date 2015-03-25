@@ -8,5 +8,7 @@ Umple is an open source project, so details will evolve. However, it is ready to
 
 
 ./compilePHP.sh
+
 ./compileJava.sh
+
 ./compileRuby.sh
