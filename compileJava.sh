@@ -10,4 +10,5 @@ java -jar ./umple.jar mainJava.ump
 mkdir ../src
 mv *.php ../src/
 mv *.rb  ../src/
+mv *.java  ../src/
 cd ..
