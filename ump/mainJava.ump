@@ -1,0 +1,7 @@
+generate Java;
+
+use traits.ump;
+use classes.ump;
+use attributes.ump;
+use asociations.ump;
+
