@@ -1,9 +1,23 @@
 trait Identifiable {
+  id;
+}
+
+trait SimpleName{
+  name
+}
+
+trait CompoundName{
   firstName;
   lastName;
-  address;
-  phoneNumber;
   fullName = {firstName + " " + lastName}
+}
+
+trait Addressable{
+  address;
+}
+
+trait Phonable{
+  phone;
 }
 
 trait GeoLocatable{
@@ -11,11 +25,10 @@ trait GeoLocatable{
   longitude;
 }
 
-trait EmailContactable{
+trait Emailable{
   email;
 }
 
-trait Organization {
-  Integer registrationNumber;
+class PersonProperties{
+  isA CompoundName, Addressable, Emailable;
 }
-

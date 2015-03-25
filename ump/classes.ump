@@ -1,9 +1,8 @@
 class Person{
-  isA Identifiable, GeoLocatable;
 }
 
 class User{
-  isA Person, EmailContactable, GeoLocatable;
+  isA Person, Emailable, GeoLocatable;
 }
 
 class Product{
