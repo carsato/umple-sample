@@ -24,11 +24,3 @@ class UserRole{
 
 class SaleType{
 }
-
-class Vehicle {}
-
-class Wheel {}
-
-association {
-    0..1 Vehicle vehicle <@>- 2..4 Wheel wheel; // vehicle composed with wheels
-}
