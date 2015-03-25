@@ -1,0 +1,34 @@
+class Person{
+  isA Identifiable, GeoLocatable;
+}
+
+class User{
+  isA Person, EmailContactable, GeoLocatable;
+}
+
+class Product{
+}
+
+class Sale{
+}
+
+class Role{
+}
+
+class Type{
+
+}
+
+class UserRole{
+}
+
+class SaleType{
+}
+
+class Vehicle {}
+
+class Wheel {}
+
+association {
+    0..1 Vehicle vehicle <@>- 2..4 Wheel wheel; // vehicle composed with wheels
+}

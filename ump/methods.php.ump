@@ -1,0 +1,12 @@
+//<?php
+
+generate Php;
+
+// A class with a method that uses 'public'.
+class Person
+{
+  public String displayName()
+  {
+    return("Hello, my name is " + getName());
+  }
+}

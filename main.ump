@@ -1,0 +1,7 @@
+generate Php;
+
+use ump/traits.ump;
+use ump/classes.ump;
+use ump/attributes.ump;
+use ump/asociations.ump;
+

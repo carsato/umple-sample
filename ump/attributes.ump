@@ -1,0 +1,28 @@
+//use person.comp;
+
+
+class User{
+  Role role2;
+  Integer number;
+  completa ;
+  via = null;
+  tipoDeVia = null;
+  numero = null;
+}
+
+class Role{
+  role1;
+}
+
+
+class Type{
+  types;
+}
+
+class UserRole{
+  isA Type;
+}
+
+class SaleType{
+  isA Type;
+}

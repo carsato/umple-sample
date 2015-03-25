@@ -1,0 +1,21 @@
+trait Identifiable {
+  firstName;
+  lastName;
+  address;
+  phoneNumber;
+  fullName = {firstName + " " + lastName}
+}
+
+trait GeoLocatable{
+  latitude;
+  longitude;
+}
+
+trait EmailContactable{
+  email;
+}
+
+trait Organization {
+  Integer registrationNumber;
+}
+
