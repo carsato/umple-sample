@@ -1,0 +1,25 @@
+class UserLogic
+{
+
+  flow {
+    UserAnonimous
+    {
+      userRegisters -> UserRegistered;
+      navigates -> Navigation;
+    }
+    UserRegistered{
+      userNavigates -> Navigation;
+    }
+  }
+}
+
+class NavigationLogic{
+      flow{
+        AnonimousNavigation{
+          userRequestPage -> CheckUserAnonimous;
+        }
+        CheckUserAnonimous{
+          userIsAnonimous -> responsePage;
+      }
+    }
+}

@@ -1,0 +1,104 @@
+trait Identifiable {
+  id;
+}
+
+trait SimpleName{
+  name
+}
+
+trait CompoundName{
+  firstName;
+  lastName;
+  fullName = {firstName + " " + lastName}
+}
+
+trait Addressable{
+  address;
+}
+
+trait Phonable{
+  phone;
+}
+
+trait GeoLocatable{
+  latitude;
+  longitude;
+}
+
+trait Emailable{
+  email;
+}
+
+
+class Person{
+}
+
+class User{
+}
+
+class Product{
+}
+
+class Sale{
+}
+
+class Role{
+}
+
+class Type{
+
+}
+
+class UserRole{
+}
+
+class SaleType{
+}
+
+class PersonProperties{
+  isA CompoundName, Addressable, Emailable;
+}
+
+class UserProperties{
+  isA GeoLocatable, Addressable, Emailable;
+}
+//use person.comp;
+
+
+class User{
+}
+
+class Role{
+}
+
+
+class Type{
+  types;
+}
+
+class UserRole{
+  isA Type;
+}
+
+class SaleType{
+  isA Type;
+}
+class Person{
+  1 -- 1 PersonProperties properties;
+}
+
+class User{
+  1 -- 1 UserProperties properties;
+}
+//<?php
+
+generate Php;
+
+// A class with a method that uses 'public'.
+class Person
+{
+  public String displayName()
+  {
+    return("Hello, my name is " + getName());
+  }
+}
