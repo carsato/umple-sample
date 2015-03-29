@@ -30,6 +30,10 @@ trait Emailable{
 }
 
 
+class Application{
+
+}
+
 class Person{
 }
 
@@ -100,5 +104,11 @@ class Person
   public String displayName()
   {
     return("Hello, my name is " + getName());
+  }
+}
+
+class Application{
+  public function run(){
+
   }
 }

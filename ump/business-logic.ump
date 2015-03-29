@@ -14,12 +14,28 @@ class UserLogic
 }
 
 class NavigationLogic{
-      flow{
-        AnonimousNavigation{
-          userRequestPage -> CheckUserAnonimous;
-        }
-        CheckUserAnonimous{
-          userIsAnonimous -> responsePage;
-      }
+  flow{
+    AnonimousNavigation{
+      userRequestPage -> CheckUserAnonimous;
     }
+    CheckUserAnonimous{
+      userIsAnonimous -> responsePage;
+    }
+  }
+}
+
+class MVC{
+  flow{
+    User{
+      request /{hola();} -> Router;
+    }
+    Model{}
+    View{}
+    Controller{}
+    Router{
+      entry / {getRequest();}
+      exit / {processRequest();}
+      processRequest -> Controller;
+    }
+  }
 }

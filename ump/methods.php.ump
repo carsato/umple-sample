@@ -10,3 +10,9 @@ class Person
     return("Hello, my name is " + getName());
   }
 }
+
+class Application{
+  public function run(){
+
+  }
+}
